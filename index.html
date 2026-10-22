@@ -1,1 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examination Result -- Demo</title>
 
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 24px 12px;
+      background: #f2f2f2;
+      color: #222;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 806px;
+      margin: 0 auto;
+      padding: 12px;
+      background: white;
+      box-shadow: 0 1px 5px #00000018;
+    }
+
+    .header {
+      padding: 22px 18px 20px;
+      background: #900090;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      text-align: left;
+    }
+
+    .header-logo {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+
+    .header-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .header h1 {
+      margin: 0 0 5px;
+      font-size: clamp(20px, 4vw, 29px);
+    }
+
+    .header p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .subtitle {
+      margin: 12px 0 15px;
+      color: #800080;
+      text-align: center;
+      font-size: 19px;
+    }
+
+    .logout {
+      margin: 0 5px 24px;
+      text-align: right;
+    }
+
+    a {
+      color: #35105c;
+      text-decoration: underline;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    td {
+      padding: 6px;
+      border: 1px solid white;
+      overflow-wrap: anywhere;
+    }
+
+    td:first-child {
+      width: 68%;
+    }
+
+    td:last-child {
+      width: 32%;
+    }
+
+    .purple {
+      background: #900090;
+      color: white;
+    }
+
+    .mauve {
+      background: #a45f99;
+      color: white;
+    }
+
+    .dark-purple {
+      background: #900090;
+      color: white;
+    }
+
+    .yellow {
+      color: #ffff66;
+      font-weight: bold;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .group {
+      margin: 8px 5px;
+    }
+
+    .notes {
+      margin: 15px 0 12px;
+      text-align: center;
+      font-size: 12px;
+      line-height: 1.65;
+    }
+
+    .links {
+      margin: 16px 0 24px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .disclaimer-title {
+      padding: 11px;
+      background: #900090;
+      color: white;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    .disclaimer {
+      padding: 8px 10px;
+      background: #eee;
+      color: #333;
+      font-size: 10px;
+      line-height: 1.3;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 8px 4px;
+      }
+
+      .page {
+        padding: 6px;
+      }
+
+      .header {
+        gap: 10px;
+        padding: 18px 8px;
+      }
+
+      .header-logo {
+        width: 55px;
+        height: 55px;
+      }
+
+      .header h1 {
+        font-size: 20px;
+      }
+
+      .header p {
+        font-size: 12px;
+      }
+
+      td {
+        padding: 7px 5px;
+        font-size: 13px;
+      }
+
+      .subtitle {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+
+    <!-- Header with logo on the left -->
+    <header class="header">
+      <img
+        class="header-logo"
+        src="https://placehold.co/160x160/900090/ffffff?text=LOGO"
+        alt="Educational Logo"
+      >
+
+      <div class="header-text">
+        <h1>The Institute of Chartered Accountants of India</h1>
+        <p>  Examination Results , September 2026 </p>
+      </div>
+    </header>
+
+    <div class="subtitle">
+      Intermediate Examination Results, September 2026
+    </div>
+
+    <div class="logout">
+      <a href="#">Logout</a>
+    </div>
+
+    <table>
+      <tbody>
+        <tr class="purple">
+          <td>Roll Number</td>
+          <td>249537</td>
+        </tr>
+
+        <tr class="mauve">
+          <td class="yellow">Name</td>
+          <td class="yellow">MITALI VINOD PATIL</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="group">Group I</div>
+
+    <table>
+      <tbody>
+        <tr class="mauve">
+          <td>Advanced Accounting</td>
+          <td>051</td>
+        </tr>
+
+        <tr class="purple">
+          <td>Corporate and Other Laws</td>
+          <td>057</td>
+        </tr>
+
+        <tr class="mauve">
+          <td>Taxation</td>
+          <td>050</td>
+        </tr>
+
+        <tr class="dark-purple bold">
+          <td>Total</td>
+          <td>158</td>
+        </tr>
+
+        <tr class="mauve">
+          <td class="yellow">Result</td>
+          <td class="yellow">SUCCESSFUL</td>
+        </tr>
+
+        <tr class="dark-purple bold">
+          <td>Grand Total</td>
+          <td>158</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="notes">
+      'E' Indicates Marks obtained in an earlier attempt<br>
+      '&lt;' Indicates passed under CA Regulations, 1988.<br>
+      '50E' Indicates permanent exemption in paper(s)
+      with the condition of minimum 50 marks in each
+      of the remaining paper(s).
+    </div>
+
+    <div class="links">
+      <a href="#">Check Another Roll Number</a>
+      &nbsp;|&nbsp;
+      <a href="#">Check Merit Login</a>
+      &nbsp;|&nbsp;
+      <a href="#">Home</a>
+    </div>
+
+    <div class="disclaimer-title">
+      Disclaimer
+    </div>
+
+    <div class="disclaimer">
+      Disclaimer:The result given is correct at the time of release of the result by the Institute which accepts no responsibility thereafter for errors or omissions caused as a result of their transmission via the Internet or their downloading or printing by the user. No material from this web site can be copied, reproduced, published, uploaded, posted, transmitted or distributed or dealt with in any manner, unless expressly authorized. Users are not permitted to change, modify or prepare derivative works from the content of this site. For any clarifications / confirmation please address your enquiries to Additional Secretary (Examinations),The Institute of Chartered Accountants of India, 'ICAI BHAWAN', Post Box No. 7112, Indraprastha Marg, New Delhi - 110 002
+    </div>
+
+  </main>
+</body>
+</html>
